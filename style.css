@@ -1,0 +1,52 @@
+body{
+    background-color: #000000;
+     overflow-x: hidden;
+     overflow-y:  hidden;
+}
+.header {
+    height: 9vh;
+    width: 300px; /* fixed width */
+    margin: 0 auto; /* centers horizontally */
+    background-color: #03DAC6 ;
+    border-radius: 50px;
+}
+.header li {
+    list-style: none;         /* removes bullets */
+    display: inline-block;    /* makes them sit side by side */
+    margin: 0 10px;           /*spacing between items */
+    color: #E0E0E0 ;
+    margin-top: 15px;
+    margin-left: 4%;           /*text color (tech cyan)*/
+    font-weight: 600;         /* bold for visibility */
+    cursor: pointer;          /* cursor changes on hover */
+    transition: 0.3s ease;    /* smooth hover effect */
+}
+#home{
+    height: 100px;
+    width: 100px;
+    /* margin-left: 2000px; */
+    margin-top: 30vh;
+    margin-left: 100vh;
+    background-color: #03DAC6;
+}
+#about{
+    height: 100px;
+    width: 100px;
+    margin-left: 100vh;
+    margin-left: 2000px;
+    background-color:red;
+}
+#projects{
+    height: 100px;
+    width: 100px;
+    margin-left: 100vh;
+    margin-left: 2000px;
+    background-color:green;
+}
+#contact{
+    height: 100px;
+    width: 100px;
+    margin-left: 100vh;
+    margin-left: 2000px;
+    background-color:gray;
+}
