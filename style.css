@@ -1,52 +1,69 @@
-body{
+body {
     background-color: #000000;
-     overflow-x: hidden;
-     overflow-y:  hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
+
 .header {
     height: 9vh;
-    width: 300px; /* fixed width */
-    margin: 0 auto; /* centers horizontally */
-    background-color: #03DAC6 ;
+    width: 300px;
+    /* fixed width */
+    margin: 0 auto;
+    background-color: #03DAC6;
+    display: flex;
     border-radius: 50px;
 }
-.header li {
-    list-style: none;         /* removes bullets */
-    display: inline-block;    /* makes them sit side by side */
-    margin: 0 10px;           /*spacing between items */
-    color: #E0E0E0 ;
-    margin-top: 15px;
-    margin-left: 4%;           /*text color (tech cyan)*/
-    font-weight: 600;         /* bold for visibility */
-    cursor: pointer;          /* cursor changes on hover */
-    transition: 0.3s ease;    /* smooth hover effect */
+
+.header button {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    color: #E0E0E0;
+    margin-top: 5px;
+    margin-left: 2%;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    border: #000000;
+    transition: 0.3s ease;
 }
-#home{
+
+#home {
     height: 100px;
     width: 100px;
     /* margin-left: 2000px; */
-    margin-top: 30vh;
-    margin-left: 100vh;
+    /* margin-top: 30vh; */
+    /* margin-left: 100px; */
     background-color: #03DAC6;
 }
-#about{
+
+#about {
     height: 100px;
     width: 100px;
-    margin-left: 100vh;
+    /* margin-left: 100vh; */
     margin-left: 2000px;
-    background-color:red;
+    background-color: red;
 }
-#projects{
+
+#projects {
     height: 100px;
     width: 100px;
-    margin-left: 100vh;
-    margin-left: 2000px;
-    background-color:green;
+    /* margin-left: 100vh; */
+    /* margin-left: 2000px; */
+    background-color: green;
 }
-#contact{
+
+#contact {
     height: 100px;
     width: 100px;
-    margin-left: 100vh;
-    margin-left: 2000px;
-    background-color:gray;
+    /* margin-left: 100vh; */
+    /* margin-left: 2000px; */
+    background-color: gray;
+}
+.site-sections{
+    display: flex;
+    height: 1000px;
+    width: 1000px;
+    position:absolute;
+    
 }

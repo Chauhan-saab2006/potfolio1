@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>potfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="header">
-        <li onclick="showSection('home')" >Home</li>
-        <li onclick="showSection('about')">About</li>
-        <li onclick="showSection('services')">Projects</li>
-        <li onclick="showSection('contact')">Contact</li>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('about')">About</button>
+        <button onclick="showSection('services')">Services</button>
+        <button onclick="showSection('contact')">Contact</button>
     </div>
-    <div id="home" class="home"></div>
-    <div id="about" class="about"></div>
-    <div  id="projects"  class="projects"></div>
-    <div id="contact" class="contact"></div>
-    
+
+    <section class="site-sections">
+        <div id="home" class="home">home</div>
+        <div id="about" class="about">about</div>
+        <!-- <div id="projects" class="projects">projects</div> -->
+        <!-- <div id="contact" class="contact">contact</div> -->
+    </section>
 
     <!-- <script src="script.js"></script> -->
 </body>
+
 </html>
 
 <!-- 
