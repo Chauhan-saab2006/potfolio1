@@ -1,69 +1,107 @@
 body {
-    background-color: #000000;
-    overflow-x: hidden;
-    overflow-y: hidden;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #000000;
 }
 
-.header {
-    height: 9vh;
-    width: 300px;
-    /* fixed width */
-    margin: 0 auto;
-    background-color: #03DAC6;
-    display: flex;
-    border-radius: 50px;
+.nav {
+  height: 9vh;
+  width: 50vh;
+  /* make it scale on smaller screens */
+  margin: 20px auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+  background: linear-gradient(135deg, #00FF88, #03DAC6);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.6),
+    0 0 40px rgba(3, 218, 198, 0.6);
+  display: flex;
+  justify-content: center;
+  /* center the buttons inside */
+  align-items: center;
+  border-radius: 50px;
 }
 
-.header button {
-    list-style: none;
-    display: inline-block;
-    margin: 0 10px;
-    color: #E0E0E0;
-    margin-top: 5px;
-    margin-left: 2%;
-    font-weight: 600;
-    cursor: pointer;
-    background-color: transparent;
-    border: #000000;
-    transition: 0.3s ease;
+
+
+.nav button {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  color: #E0E0E0;
+  margin-top: 5px;
+  margin-left: 2%;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  border: #000000;
+  transition: 0.3s ease;
 }
 
+/* Sections container */
+.sections {
+  position: relative;
+  height: 100vh;
+}
+
+.section {
+  position: absolute;
+  top: 40%;
+  left: 100vw;
+  transform: translateY(-50%);
+  width: 80%;
+  max-width: 800px;
+  height: 70%;
+  max-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(16px, 3vw, 28px);
+  color: white;
+  border-radius: 10px;
+  transition: left 0.6s ease;
+}
+
+/* Backgrounds */
 #home {
-    height: 100px;
-    width: 100px;
-    /* margin-left: 2000px; */
-    /* margin-top: 30vh; */
-    /* margin-left: 100px; */
-    background-color: #03DAC6;
+  background: linear-gradient(135deg, #00FF88, #03DAC6);
 }
 
 #about {
-    height: 100px;
-    width: 100px;
-    /* margin-left: 100vh; */
-    margin-left: 2000px;
-    background-color: red;
+  background: linear-gradient(135deg, #03DAC6, #0D6EFD);
 }
 
-#projects {
-    height: 100px;
-    width: 100px;
-    /* margin-left: 100vh; */
-    /* margin-left: 2000px; */
-    background-color: green;
+#services {
+  background: linear-gradient(135deg, #8A2BE2, #03DAC6);
 }
 
 #contact {
-    height: 100px;
-    width: 100px;
-    /* margin-left: 100vh; */
-    /* margin-left: 2000px; */
-    background-color: gray;
+  background: linear-gradient(135deg, #FF4500, #00FF88);
 }
-.site-sections{
-    display: flex;
-    height: 1000px;
-    width: 1000px;
-    position:absolute;
-    
+
+/* Active state (centered) */
+.section.active {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .section {
+    width: 90%;
+    height: 60%;
+    font-size: clamp(14px, 4vw, 22px);
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    width: 95%;
+    height: 50%;
+    font-size: clamp(12px, 5vw, 18px);
+  }
 }

@@ -2,28 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>potfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="header">
-        <button onclick="showSection('home')">Home</button>
-        <button onclick="showSection('about')">About</button>
-        <button onclick="showSection('services')">Services</button>
-        <button onclick="showSection('contact')">Contact</button>
-    </div>
+  <div class="nav">
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('services')">Services</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </div>
 
-    <section class="site-sections">
-        <div id="home" class="home">home</div>
-        <div id="about" class="about">about</div>
-        <!-- <div id="projects" class="projects">projects</div> -->
-        <!-- <div id="contact" class="contact">contact</div> -->
-    </section>
+  <div class="sections">
+    <div id="home" class="section active">HOME</div>
+    <div id="about" class="section">ABOUT</div>
+    <div id="services" class="section">SERVICES</div>
+    <div id="contact" class="section">CONTACT</div>
+  </div>
 
-    <!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
 </body>
 
 </html>
