@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 </head>
 
 <body>
@@ -45,7 +47,6 @@
             <a href="https://code-miestro.netlify.app/" target="_blank">
               <button>Demo</button>
             </a>
-
           </p>
         </div>
       </div>
@@ -90,47 +91,46 @@
       </div>
     </div>
 
-    <div id="contact" class="section">CONTACT</div>
-  </div>
+    <div id="contact" class="section">
+      <div class="contact-content">
+        <div class="contact-info">
+          I'm always interested in new opportunities, freelance projects, or just a friendly chat about technology.
+          Feel free to reach out!
+        </div>
+        <div class="form-container">
+          <input class="input-form" type="text" name="name" placeholder="Your Name" required>
+          <input class="input-form" type="email" name="email" placeholder="Your Email" required>
+          <textarea class="input-form" name="message" placeholder="Your Message" required></textarea>
+          <button class="submit-form" type="submit">Submit</button>
+        </div>
 
+        <!-- <p class="contact-info">
+          I'm always interested in new opportunities, freelance projects, or just a friendly chat about technology.
+          Feel free to reach out!
+        </p> -->
+        <!-- <div class="contact-info">
+          <a href="mailto:your.email@example.com" title="Email">
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://github.com/Chauhan-saab2006" target="_blank" title="GitHub">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div> -->
+        <!-- <h3>Send Me a Message</h3> -->
+        <!-- <form class="contact-form" autocomplete="off">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form> -->
 
-  <!--
-    <section id="contact" class="section" role="region" aria-labelledby="contact-title" tabindex="0">
-      <h1 id="contact-title">Get In Touch</h1>
-      <p>I'm always interested in new opportunities, whether it's a full-time position, freelance project, or just a friendly chat about technology. Feel free to reach out!</p>
-
-      <div class="contact-info">
-        <h2>Contact Information</h2>
-        <p><strong>Email:</strong> your.email@example.com</p>
-        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-        <p><strong>Location:</strong> San Francisco, CA</p>
-        <p><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/yourprofile</a></p>
-        <p><strong>GitHub:</strong> <a href="#" target="_blank">github.com/yourusername</a></p>
       </div>
+    </div>
 
-      <h2>Send Me a Message</h2>
-      <form id="contact-form" novalidate>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required minlength="2" placeholder="Your full name" />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
-
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required placeholder="What's this about?" />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required minlength="10" placeholder="Tell me about your project or just say hello!"></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-      <div id="form-message" role="alert" aria-live="polite"></div>
-
-      <p class="contact-note">I typically respond within 24 hours. Looking forward to hearing from you!</p>
-    </section>
-  </main>
--->
-
+  </div>
   <script src="script.js"></script>
 </body>
 
